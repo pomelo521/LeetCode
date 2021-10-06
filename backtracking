@@ -1,0 +1,25 @@
+// 可能的題型: 嘗試用input去作出可能的排列組合
+// https://leetcode.com/problems/generate-parentheses/
+// https://leetcode.com/problems/permutations/
+
+class Solution:
+    def pseudo_code(self, nums: List[int]) -> List[List[int]]:
+        result = []
+        def backtracking(sub_nums):
+            // Stop condition
+            if ...:
+                result.append(...)
+                return
+            
+            for i in range(sub_len):
+                if ...:
+                    ...
+                    sub_nums = ...
+                    backtracking(sub_nums)
+                else:
+                    ...
+                    sub_nums = ...
+                    backtracking(sub_nums)
+                
+        backtracking(nums)
+        return result
