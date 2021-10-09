@@ -5,21 +5,21 @@
 class Solution:
     def pseudo_code(self, nums: List[int]) -> List[List[int]]:
         result = []
-        def backtracking(sub_nums):
+        def backtracking(sub_nums, sub_result):
             // Stop condition
             if ...:
-                result.append(...)
+                result.append(sub_result)
                 return
             
             for i in range(sub_len):
                 if ...:
-                    ...
+                    sub_result = ...
                     sub_nums = ...
-                    backtracking(sub_nums)
+                    backtracking(sub_nums, sub_result)
                 else:
-                    ...
+                    sub_result = ...
                     sub_nums = ...
-                    backtracking(sub_nums)
+                    backtracking(sub_nums, sub_result)
                 
-        backtracking(nums)
+        backtracking(nums, [])
         return result
